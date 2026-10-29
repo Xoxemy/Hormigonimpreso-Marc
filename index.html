@@ -1289,7 +1289,7 @@
                 </div>
 
                 <figure class="hero-photo">
-                    <img src="./assets/trabajos/impreso-patio-01.jpeg" alt="Patio amplio terminado con hormigón impreso en tonos tierra" fetchpriority="high" decoding="async" />
+                    <img src="./impreso-patio-01.jpeg" alt="Patio amplio terminado con hormigón impreso en tonos tierra" fetchpriority="high" decoding="async" />
                     <figcaption>Trabajo real · patio exterior</figcaption>
                 </figure>
             </div>
@@ -1303,7 +1303,7 @@
         <section class="statement" aria-labelledby="statement-title">
             <div class="page-shell statement-grid">
                 <div class="statement-photo">
-                    <img src="./assets/trabajos/impreso-pasillo-02.jpeg" alt="Pasillo exterior con acabado de piedra impresa" loading="lazy" decoding="async" />
+                    <img src="./impreso-pasillo-02.jpeg" alt="Pasillo exterior con acabado de piedra impresa" loading="lazy" decoding="async" />
                 </div>
                 <div class="statement-copy">
                     <p class="section-index">01 · La diferencia</p>
@@ -1329,7 +1329,7 @@
 
             <div class="page-shell services-layout">
                 <div class="services-photo">
-                    <img src="entrada-09.jpeg" alt="Entrada de vivienda con hormigón impreso gris" loading="lazy" decoding="async" />
+                    <img src="./entrada-09.jpeg" alt="Entrada de vivienda con hormigón impreso gris" loading="lazy" decoding="async" />
                     <span>Acabados pensados para cada espacio</span>
                 </div>
 
@@ -1398,7 +1398,7 @@
             <div class="page-shell works-grid">
                 <figure class="work-card work-one">
                     <div class="work-image">
-                        <img src="./assets/trabajos/adoquin-03.jpeg" alt="Detalle de pavimento impreso con textura de adoquín" loading="lazy" decoding="async" />
+                        <img src="./adoquin-03.jpeg" alt="Detalle de pavimento impreso con textura de adoquín" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>01</span>
@@ -1407,7 +1407,7 @@
                 </figure>
                 <figure class="work-card work-two">
                     <div class="work-image">
-                        <img src="./assets/trabajos/fratasado-04.jpeg" alt="Pavimento exterior de tonos cálidos junto a una vivienda" loading="lazy" decoding="async" />
+                        <img src="./fratasado-04.jpeg" alt="Pavimento exterior de tonos cálidos junto a una vivienda" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>02</span>
@@ -1416,7 +1416,7 @@
                 </figure>
                 <figure class="work-card work-three">
                     <div class="work-image">
-                        <img src="./assets/trabajos/pizarra-05-clean.jpeg" alt="Pavimento gris con acabado de pizarra" loading="lazy" decoding="async" />
+                        <img src="./pizarra-05-clean.jpeg" alt="Pavimento gris con acabado de pizarra" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>03</span>
@@ -1425,7 +1425,7 @@
                 </figure>
                 <figure class="work-card work-four">
                     <div class="work-image">
-                        <img src="./assets/trabajos/piedra-06.jpeg" alt="Superficie exterior con acabado de piedra" loading="lazy" decoding="async" />
+                        <img src="./piedra-06.jpeg" alt="Superficie exterior con acabado de piedra" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>04</span>
@@ -1492,7 +1492,7 @@
                 </div>
 
                 <div class="contact-photo">
-                    <img src="./assets/trabajos/terraza-08.jpeg" alt="Terraza y escalones revestidos en tonos rojizos" loading="lazy" decoding="async" />
+                    <img src="./terraza-08.jpeg" alt="Terraza y escalones revestidos en tonos rojizos" loading="lazy" decoding="async" />
                 </div>
             </div>
         </section>
@@ -1501,7 +1501,7 @@
             <div class="page-shell footer-grid">
                 <a href="#inicio" aria-label="Volver al inicio">
                     <span class="brand">
-              <img src="./assets/logo-mark-v2.png" alt="" aria-hidden="true" />
+              <img src="./logo-mark-v2.png" alt="" aria-hidden="true" />
               <span class="brand-copy">
                 <strong>Hormigón Impreso</strong>
                 <span>Andrés</span>
@@ -1533,7 +1533,70 @@
         </a>
     </main>
 
-    <script src="./js/main.js"></script>
+    <script>
+        const header = document.querySelector(".site-header");
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+        const sections = [...document.querySelectorAll("section[id], main[id]")];
+
+        function setHeaderState() {
+            header ? .classList.toggle("is-scrolled", window.scrollY > 12);
+        }
+
+        function closeNav() {
+            document.body.classList.remove("nav-open");
+            navToggle ? .setAttribute("aria-expanded", "false");
+        }
+
+        function toggleNav() {
+            const isOpen = document.body.classList.toggle("nav-open");
+            navToggle ? .setAttribute("aria-expanded", String(isOpen));
+        }
+
+        function setActiveLink() {
+            const fromTop = window.scrollY + 120;
+            let currentId = "inicio";
+
+            for (const section of sections) {
+                if (section.offsetTop <= fromTop) {
+                    currentId = section.id;
+                }
+            }
+
+            navLinks.forEach((link) => {
+                const href = link.getAttribute("href") ? .slice(1);
+                link.classList.toggle("is-active", href === currentId);
+            });
+        }
+
+        navToggle ? .addEventListener("click", toggleNav);
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", closeNav);
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeNav();
+            }
+        });
+
+        window.addEventListener("scroll", () => {
+            setHeaderState();
+            setActiveLink();
+        }, {
+            passive: true
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 980) {
+                closeNav();
+            }
+        });
+
+        setHeaderState();
+        setActiveLink();
+    </script>
 </body>
 
 </html>
