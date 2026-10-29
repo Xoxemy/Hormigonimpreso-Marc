@@ -1,353 +1,1539 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hormigón Impreso Andrés | Valencia, Castellón y Alicante</title>
-    <meta
-      name="description"
-      content="Hormigón impreso, fratasado, vertical, monocapa, reparación y mantenimiento. Más de 12 años de experiencia. Presupuesto sin compromiso."
-    />
-    <meta
-      name="keywords"
-      content="hormigón impreso, hormigón fratasado, pavimentos Valencia, pavimentos Castellón, pavimentos Alicante, monocapa, reparación de pavimentos"
-    />
+    <meta name="description" content="Hormigón impreso, fratasado, vertical, monocapa, reparación y mantenimiento. Más de 12 años de experiencia. Presupuesto sin compromiso." />
+    <meta name="keywords" content="hormigón impreso, hormigón fratasado, pavimentos Valencia, pavimentos Castellón, pavimentos Alicante, monocapa, reparación de pavimentos" />
     <link rel="icon" href="./assets/logo-mark-v2.png" />
     <meta property="og:title" content="Hormigón Impreso Andrés | Valencia, Castellón y Alicante" />
-    <meta
-      property="og:description"
-      content="Hormigón impreso, fratasado, vertical, monocapa, reparación y mantenimiento. Más de 12 años de experiencia. Presupuesto sin compromiso."
-    />
+    <meta property="og:description" content="Hormigón impreso, fratasado, vertical, monocapa, reparación y mantenimiento. Más de 12 años de experiencia. Presupuesto sin compromiso." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Hormigón Impreso Andrés" />
     <meta property="og:image" content="assets/og-v2.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
+</head>
+<style :root { --paper: #f3efe5; --paper-light: #faf8f2; --ink: #171717; --muted: #666258; --blue: #153ed3; --blue-dark: #0f31af; --orange: #ff6b16; --line: rgba(23, 23, 23, 0.18); --line-light: rgba(255, 255, 255, 0.28); --shell: min(1240px, calc(100%
+    - 80px)); --sans: Arial, Helvetica, sans-serif; --serif: Georgia, "Times New Roman", serif; } * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; overflow-x: hidden; color: var(--ink); background: var(--paper); font-family:
+    var(--sans); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; } a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; } img { display: block; max-width: 100%; } h1, h2, h3, p, figure { margin-top:
+    0; } a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; } .page-shell { width: var(--shell); margin-inline: auto; } .site-header { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom:
+    1px solid var(--line); transition: box-shadow 180ms ease; } .site-header.is-scrolled { box-shadow: 0 8px 24px rgba(23, 23, 23, 0.08); } .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 88px; } .brand
+    { display: inline-flex; align-items: center; gap: 12px; } .brand>
+    img {
+        width: 37px;
+        height: 37px;
+        object-fit: contain;
+    }
+    
+    .brand-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    
+    .brand-copy strong {
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: -0.01em;
+    }
+    
+    .brand-copy span {
+        color: var(--blue);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.21em;
+    }
+    
+    .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+    }
+    
+    .main-nav a,
+    .site-footer nav a {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+    
+    .main-nav a {
+        position: relative;
+        padding: 8px 0;
+    }
+    
+    .main-nav a::after {
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+        left: 0;
+        height: 2px;
+        background: var(--orange);
+        content: "";
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 180ms ease;
+    }
+    
+    .main-nav a:hover::after,
+    .main-nav a.is-active::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    
+    .header-phone {
+        display: inline-flex;
+        align-items: center;
+        justify-self: end;
+        gap: 10px;
+        min-height: 50px;
+        padding: 0 18px;
+        color: #fff;
+        background: var(--blue);
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.03em;
+    }
+    
+    .header-phone svg {
+        width: 18px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    
+    .header-phone:hover {
+        background: var(--blue-dark);
+    }
+    
+    .nav-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        margin-left: 8px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        justify-self: end;
+    }
+    
+    .nav-toggle span,
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--ink);
+        transition: transform 180ms ease, opacity 180ms ease;
+    }
+    
+    .nav-toggle span {
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+        position: absolute;
+        left: 0;
+        content: "";
+    }
+    
+    .nav-toggle span::before {
+        top: -6px;
+    }
+    
+    .nav-toggle span::after {
+        top: 6px;
+    }
+    
+    body.nav-open .nav-toggle span {
+        background: transparent;
+    }
+    
+    body.nav-open .nav-toggle span::before {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    body.nav-open .nav-toggle span::after {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    
+    .hero {
+        padding: 78px 0 0;
+        background: var(--paper);
+    }
+    
+    .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(460px, 1.08fr);
+        align-items: center;
+        gap: clamp(48px, 7vw, 110px);
+    }
+    
+    .hero-copy {
+        padding: 34px 0 82px;
+    }
+    
+    .hero h1,
+    h2 {
+        font-weight: 900;
+        letter-spacing: -0.075em;
+    }
+    
+    .hero h1 {
+        max-width: 670px;
+        margin-bottom: 31px;
+        font-size: clamp(66px, 7.4vw, 108px);
+        line-height: 0.87;
+    }
+    
+    .hero h1>span,
+    .hero h1>em {
+        display: block;
+    }
+    
+    .hero h1 em,
+    h2 em {
+        display: inline;
+        color: var(--orange);
+        font-family: var(--serif);
+        font-weight: 400;
+        letter-spacing: -0.055em;
+    }
+    
+    .hero-copy>p {
+        max-width: 475px;
+        margin-bottom: 34px;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.55;
+    }
+    
+    .hero-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 11px;
+    }
+    
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        min-height: 54px;
+        padding: 0 21px;
+        border: 1px solid var(--ink);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: transform 180ms ease, color 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+    
+    .button:hover {
+        transform: translateY(-2px);
+    }
+    
+    .button svg,
+    .inline-link svg,
+    .service-row>svg,
+    .contact-arrow svg {
+        width: 19px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
+        stroke-linecap: square;
+        stroke-linejoin: miter;
+    }
+    
+    .button-blue {
+        color: #fff;
+        background: var(--blue);
+        border-color: var(--blue);
+    }
+    
+    .button-blue:hover {
+        background: var(--blue-dark);
+        border-color: var(--blue-dark);
+    }
+    
+    .button-plain {
+        background: transparent;
+    }
+    
+    .button-plain:hover {
+        color: #fff;
+        background: var(--ink);
+    }
+    
+    .hero-photo {
+        position: relative;
+        align-self: stretch;
+        min-height: 620px;
+        margin-bottom: 0;
+        overflow: hidden;
+        border-top-left-radius: 230px;
+    }
+    
+    .hero-photo img {
+        width: 100%;
+        height: 100%;
+        min-height: 620px;
+        object-fit: cover;
+        object-position: 54% center;
+    }
+    
+    .hero-photo figcaption {
+        position: absolute;
+        right: 18px;
+        bottom: 17px;
+        padding: 9px 11px;
+        color: #fff;
+        background: rgba(23, 23, 23, 0.82);
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+    
+    .trust-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 93px;
+        border-top: 1px solid var(--line);
+    }
+    
+    .trust-strip p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+    
+    .trust-strip p:last-child {
+        justify-content: flex-end;
+        gap: 10px;
+        border-left: 1px solid var(--line);
+    }
+    
+    .trust-strip strong {
+        color: var(--blue);
+        font-size: 30px;
+        letter-spacing: -0.06em;
+    }
+    
+    .statement {
+        padding: 145px 0;
+        background: var(--paper-light);
+    }
+    
+    .statement-grid {
+        display: grid;
+        grid-template-columns: minmax(320px, 0.84fr) minmax(0, 1.16fr);
+        align-items: center;
+        gap: clamp(70px, 10vw, 160px);
+    }
+    
+    .statement-photo {
+        position: relative;
+        min-height: 610px;
+        overflow: hidden;
+    }
+    
+    .statement-photo::before {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 42%;
+        height: 13px;
+        background: var(--orange);
+        content: "";
+    }
+    
+    .statement-photo img {
+        width: 100%;
+        height: 610px;
+        object-fit: cover;
+    }
+    
+    .section-index {
+        margin-bottom: 37px;
+        color: var(--blue);
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    }
+    
+    .statement-copy h2,
+    .services-heading h2,
+    .works-heading h2,
+    .process-heading h2,
+    .contact-copy h2 {
+        margin-bottom: 34px;
+        font-size: clamp(58px, 6.7vw, 92px);
+        line-height: 0.91;
+    }
+    
+    .statement-copy>p:not(.section-index) {
+        max-width: 515px;
+        margin-bottom: 36px;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.7;
+    }
+    
+    .inline-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid var(--ink);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+    
+    .inline-link svg {
+        transition: transform 180ms ease;
+    }
+    
+    .inline-link:hover svg {
+        transform: translateX(5px);
+    }
+    
+    .services {
+        padding: 138px 0 150px;
+        background: var(--paper);
+    }
+    
+    .services-heading {
+        display: grid;
+        grid-template-columns: 0.42fr 1.58fr;
+        align-items: start;
+        gap: 40px;
+        margin-bottom: 75px;
+    }
+    
+    .services-heading h2 {
+        max-width: 1000px;
+        margin-bottom: 0;
+    }
+    
+    .services-layout {
+        display: grid;
+        grid-template-columns: minmax(320px, 0.83fr) minmax(0, 1.17fr);
+        align-items: start;
+        gap: clamp(55px, 8vw, 125px);
+    }
+    
+    .services-photo {
+        position: sticky;
+        top: 25px;
+    }
+    
+    .services-photo img {
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+    }
+    
+    .services-photo span {
+        display: block;
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+    
+    .services-list {
+        border-top: 1px solid var(--ink);
+    }
+    
+    .service-row {
+        display: grid;
+        grid-template-columns: 45px minmax(0, 1fr) 26px;
+        gap: 23px;
+        align-items: start;
+        min-height: 155px;
+        padding: 25px 0 26px;
+        border-bottom: 1px solid var(--line);
+    }
+    
+    .service-row>span {
+        padding-top: 5px;
+        color: var(--blue);
+        font-size: 11px;
+        font-weight: 900;
+    }
+    
+    .service-row h3 {
+        margin-bottom: 11px;
+        font-size: clamp(27px, 2.4vw, 38px);
+        font-weight: 900;
+        letter-spacing: -0.05em;
+        line-height: 1;
+    }
+    
+    .service-row p {
+        max-width: 530px;
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .service-row>svg {
+        align-self: center;
+        color: var(--orange);
+        transition: transform 180ms ease;
+    }
+    
+    .service-row:hover>svg {
+        transform: translateX(5px);
+    }
+    
+    .works {
+        position: relative;
+        padding: 137px 0 150px;
+        color: var(--ink);
+        background: var(--paper-light);
+        border-top: 5px solid var(--blue);
+    }
+    
+    .works::after {
+        position: absolute;
+        z-index: 2;
+        bottom: -22px;
+        left: 50%;
+        width: 44px;
+        height: 22px;
+        background: var(--paper-light);
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        content: "";
+        transform: translateX(-50%);
+    }
+    
+    .section-index-light {
+        color: var(--blue);
+    }
+    
+    .works-heading {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
+        align-items: end;
+        gap: 70px;
+        margin-bottom: 72px;
+    }
+    
+    .works-heading h2 {
+        max-width: 800px;
+        margin-bottom: 0;
+    }
+    
+    .works-heading h2 em {
+        color: var(--orange);
+    }
+    
+    .works-intro {
+        padding-bottom: 7px;
+    }
+    
+    .works-intro::before {
+        display: block;
+        width: 62px;
+        height: 2px;
+        margin-bottom: 23px;
+        background: var(--blue);
+        content: "";
+    }
+    
+    .works-intro p {
+        margin-bottom: 25px;
+        color: var(--muted);
+        font-size: 15px;
+    }
+    
+    .button-orange {
+        color: var(--ink);
+        background: var(--orange);
+        border-color: var(--orange);
+    }
+    
+    .button-orange:hover {
+        color: #fff;
+        background: var(--blue);
+        border-color: var(--blue);
+    }
+    
+    .works-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+    }
+    
+    .work-card {
+        position: relative;
+        display: grid;
+        grid-template-rows: 480px auto;
+        gap: 0;
+        margin: 0;
+        background: transparent;
+    }
+    
+    .work-image {
+        position: relative;
+        overflow: hidden;
+        background: #d7d1c6;
+    }
+    
+    .work-card img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 650ms cubic-bezier(0.16, 0.8, 0.2, 1);
+    }
+    
+    .work-card:hover img {
+        transform: scale(1.045);
+    }
+    
+    .work-card figcaption {
+        position: relative;
+        display: grid;
+        grid-template-columns: 32px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+        min-height: 64px;
+        margin: 0;
+        padding-top: 15px;
+    }
+    
+    .work-card figcaption::before {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: var(--blue);
+        content: "";
+    }
+    
+    .work-card figcaption span {
+        padding-top: 10px;
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 900;
+    }
+    
+    .work-card figcaption strong {
+        padding-top: 10px;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    
+    .process {
+        padding: 139px 0 0;
+        color: var(--ink);
+        background: var(--orange);
+    }
+    
+    .process-grid {
+        display: grid;
+        grid-template-columns: minmax(320px, 0.84fr) minmax(0, 1.16fr);
+        gap: clamp(70px, 10vw, 160px);
+        padding-bottom: 126px;
+    }
+    
+    .process-heading .section-index {
+        color: var(--ink);
+    }
+    
+    .process-heading h2 em {
+        color: #fff;
+    }
+    
+    .process-heading>p:last-child {
+        max-width: 355px;
+        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    
+    .process-list {
+        margin: 4px 0 0;
+        padding: 0;
+        border-top: 1px solid rgba(23, 23, 23, 0.45);
+        list-style: none;
+    }
+    
+    .process-list li {
+        display: grid;
+        grid-template-columns: 55px minmax(0, 1fr);
+        gap: 22px;
+        padding: 28px 0 31px;
+        border-bottom: 1px solid rgba(23, 23, 23, 0.45);
+    }
+    
+    .process-list li>span {
+        font-size: 11px;
+        font-weight: 900;
+    }
+    
+    .process-list h3 {
+        margin-bottom: 10px;
+        font-size: clamp(29px, 3vw, 43px);
+        font-weight: 900;
+        letter-spacing: -0.055em;
+        line-height: 1;
+    }
+    
+    .process-list p {
+        max-width: 520px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .coverage-line {
+        display: grid;
+        grid-template-columns: 0.38fr 1.62fr;
+        align-items: center;
+        min-height: 111px;
+        border-top: 1px solid rgba(23, 23, 23, 0.45);
+    }
+    
+    .coverage-line span {
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+    
+    .coverage-line strong {
+        font-size: clamp(21px, 3vw, 38px);
+        font-weight: 900;
+        letter-spacing: -0.045em;
+    }
+    
+    .contact {
+        padding: 145px 0;
+        background: var(--paper-light);
+    }
+    
+    .contact-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.16fr) minmax(340px, 0.84fr);
+        align-items: center;
+        gap: clamp(70px, 10vw, 155px);
+    }
+    
+    .contact-copy h2 {
+        max-width: 780px;
+    }
+    
+    .contact-copy h2 em {
+        color: var(--blue);
+    }
+    
+    .contact-promise {
+        margin-bottom: 48px;
+        color: var(--muted);
+        font-size: 16px;
+    }
+    
+    .contact-phone {
+        position: relative;
+        display: block;
+        max-width: 680px;
+        padding: 25px 70px 24px 0;
+        border-top: 1px solid var(--ink);
+        border-bottom: 1px solid var(--ink);
+    }
+    
+    .contact-phone>span:first-child {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--blue);
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+    }
+    
+    .contact-phone strong {
+        font-size: clamp(44px, 5vw, 67px);
+        font-weight: 900;
+        letter-spacing: -0.065em;
+        line-height: 0.9;
+    }
+    
+    .contact-arrow {
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+        display: grid;
+        width: 45px;
+        height: 45px;
+        place-items: center;
+        color: #fff;
+        background: var(--blue);
+    }
+    
+    .contact-arrow svg {
+        width: 22px;
+    }
+    
+    .contact-photo {
+        position: relative;
+        min-height: 565px;
+        overflow: hidden;
+        border-top-right-radius: 180px;
+    }
+    
+    .contact-photo::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 30%;
+        height: 14px;
+        background: var(--blue);
+        content: "";
+    }
+    
+    .contact-photo img {
+        width: 100%;
+        height: 565px;
+        object-fit: cover;
+    }
+    
+    .site-footer {
+        padding: 72px 0 26px;
+        color: #fff;
+        background: var(--blue);
+    }
+    
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr 1fr;
+        gap: 55px;
+    }
+    
+    .site-footer .brand-copy span {
+        color: #ff9558;
+    }
+    
+    .site-footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .site-footer nav a {
+        color: rgba(255, 255, 255, 0.72);
+    }
+    
+    .site-footer nav a:hover {
+        color: #fff;
+    }
+    
+    .footer-contact {
+        text-align: right;
+    }
+    
+    .footer-contact a {
+        display: block;
+        margin-bottom: 11px;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+    }
+    
+    .footer-contact p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 11px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        grid-column: 1 / -1;
+        justify-content: space-between;
+        margin-top: 52px;
+        padding-top: 21px;
+        border-top: 1px solid var(--line-light);
+        color: rgba(255, 255, 255, 0.58);
+        font-size: 10px;
+    }
+    
+    .mobile-call {
+        display: none;
+    }
+    
+    @media (max-width: 980px) {
+         :root {
+            --shell: min(100% - 48px, 860px);
+        }
+        .header-inner {
+            grid-template-columns: 1fr auto auto;
+        }
+        .main-nav {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            display: none;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+            padding: 12px 24px 20px;
+            background: var(--paper);
+            border-bottom: 1px solid var(--line);
+        }
+        body.nav-open .main-nav {
+            display: flex;
+        }
+        .main-nav a {
+            padding: 14px 0;
+        }
+        .nav-toggle {
+            display: grid;
+            place-items: center;
+        }
+        .hero {
+            padding-top: 58px;
+        }
+        .hero-grid {
+            grid-template-columns: minmax(0, 0.95fr) minmax(330px, 1.05fr);
+            gap: 42px;
+        }
+        .hero h1 {
+            font-size: clamp(60px, 8.6vw, 83px);
+        }
+        .hero-photo,
+        .hero-photo img {
+            min-height: 540px;
+        }
+        .statement-grid,
+        .services-layout,
+        .process-grid,
+        .contact-grid {
+            gap: 60px;
+        }
+        .services-heading {
+            grid-template-columns: 0.25fr 1.75fr;
+        }
+        .services-photo img {
+            height: 530px;
+        }
+        .work-card {
+            grid-template-rows: 400px auto;
+        }
+        .contact-photo,
+        .contact-photo img {
+            min-height: 510px;
+            height: 510px;
+        }
+    }
+    
+    @media (max-width: 720px) {
+         :root {
+            --shell: calc(100% - 36px);
+        }
+        body {
+            padding-bottom: 68px;
+        }
+        .header-inner {
+            min-height: 72px;
+        }
+        .brand {
+            gap: 9px;
+        }
+        .brand>img {
+            width: 31px;
+            height: 31px;
+        }
+        .brand-copy strong {
+            font-size: 10px;
+        }
+        .brand-copy span {
+            font-size: 8px;
+        }
+        .header-phone {
+            min-height: 0;
+            padding: 0;
+            color: var(--blue);
+            background: transparent;
+            font-size: 12px;
+        }
+        .header-phone svg {
+            display: none;
+        }
+        .hero {
+            padding-top: 43px;
+        }
+        .hero-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 39px;
+        }
+        .hero-copy {
+            padding: 0;
+        }
+        .hero h1 {
+            margin-bottom: 23px;
+            font-size: clamp(55px, 17vw, 76px);
+        }
+        .hero-copy>p {
+            margin-bottom: 28px;
+            font-size: 15px;
+        }
+        .hero-actions {
+            align-items: stretch;
+        }
+        .button {
+            min-height: 51px;
+            gap: 22px;
+            padding-inline: 17px;
+        }
+        .hero-photo {
+            min-height: 430px;
+            border-top-left-radius: 145px;
+        }
+        .hero-photo img {
+            min-height: 430px;
+        }
+        .trust-strip {
+            grid-template-columns: 1fr;
+            padding: 7px 0;
+        }
+        .trust-strip p {
+            min-height: 54px;
+            justify-content: flex-start !important;
+        }
+        .trust-strip p:last-child {
+            border-top: 1px solid var(--line);
+            border-left: 0;
+        }
+        .statement,
+        .services,
+        .works,
+        .contact {
+            padding: 95px 0;
+        }
+        .statement-grid,
+        .services-layout,
+        .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 54px;
+        }
+        .statement-photo {
+            min-height: 440px;
+        }
+        .statement-photo img {
+            height: 440px;
+        }
+        .statement-copy h2,
+        .services-heading h2,
+        .works-heading h2,
+        .process-heading h2,
+        .contact-copy h2 {
+            font-size: clamp(49px, 14.5vw, 68px);
+        }
+        .section-index {
+            margin-bottom: 25px;
+        }
+        .statement-copy>p:not(.section-index) {
+            font-size: 15px;
+        }
+        .services-heading {
+            display: block;
+            margin-bottom: 51px;
+        }
+        .services-photo {
+            position: relative;
+            top: auto;
+        }
+        .services-photo img {
+            height: 440px;
+        }
+        .service-row {
+            grid-template-columns: 35px minmax(0, 1fr);
+            gap: 14px;
+            min-height: 0;
+            padding: 23px 0 25px;
+        }
+        .service-row>svg {
+            display: none;
+        }
+        .service-row h3 {
+            font-size: 28px;
+        }
+        .works-heading {
+            grid-template-columns: 1fr;
+            gap: 33px;
+            margin-bottom: 52px;
+        }
+        .works-intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .works-intro p {
+            max-width: 120px;
+            margin: 0;
+        }
+        .works-grid {
+            grid-template-columns: 1fr;
+            gap: 27px;
+        }
+        .work-card,
+        .work-one,
+        .work-two,
+        .work-three,
+        .work-four {
+            grid-column: auto;
+            grid-row: auto;
+            grid-template-rows: 360px auto;
+            height: auto;
+            min-height: 0;
+        }
+        .work-card figcaption {
+            min-height: 55px;
+        }
+        .work-three img {
+            object-position: center 54%;
+        }
+        .process {
+            padding-top: 95px;
+        }
+        .process-grid {
+            grid-template-columns: 1fr;
+            gap: 53px;
+            padding-bottom: 83px;
+        }
+        .process-list li {
+            grid-template-columns: 42px minmax(0, 1fr);
+            gap: 11px;
+        }
+        .coverage-line {
+            grid-template-columns: 1fr;
+            align-content: center;
+            gap: 10px;
+            min-height: 105px;
+        }
+        .coverage-line strong {
+            font-size: 24px;
+        }
+        .contact-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .contact-copy {
+            order: 1;
+        }
+        .contact-photo {
+            order: 0;
+            min-height: 430px;
+            border-top-right-radius: 130px;
+        }
+        .contact-photo img {
+            height: 430px;
+            min-height: 430px;
+        }
+        .contact-phone strong {
+            font-size: clamp(41px, 13vw, 58px);
+        }
+        .site-footer {
+            padding: 57px 0 24px;
+        }
+        .footer-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 45px 25px;
+        }
+        .footer-contact {
+            grid-column: 1 / -1;
+            text-align: left;
+        }
+        .footer-bottom {
+            flex-direction: column;
+            gap: 9px;
+            margin-top: 8px;
+        }
+        .mobile-call {
+            position: fixed;
+            z-index: 20;
+            right: 13px;
+            bottom: 12px;
+            left: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 52px;
+            color: #fff;
+            background: var(--blue);
+            box-shadow: 0 9px 30px rgba(15, 49, 175, 0.3);
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+        .mobile-call svg {
+            width: 20px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.7;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+            transition-duration: 0.01ms !important;
+        }
+    }
+</style>
+
+<body>
     <main id="inicio">
-      <header class="site-header">
-        <div class="page-shell header-inner">
-          <a href="#inicio" aria-label="Hormigón Impreso Andrés, inicio">
-            <span class="brand">
-              <img src="./assets/logo-mark-v2.png" alt="" aria-hidden="true" />
+        <header class="site-header">
+            <div class="page-shell header-inner">
+                <a href="#inicio" aria-label="Hormigón Impreso Andrés, inicio">
+                    <span class="brand">
+              <img src="./logo-mark-v2.png" alt="" aria-hidden="true" />
               <span class="brand-copy">
                 <strong>Hormigón Impreso</strong>
                 <span>Andrés</span>
-              </span>
-            </span>
-          </a>
+                    </span>
+                    </span>
+                </a>
 
-          <nav class="main-nav" aria-label="Navegación principal">
-            <a href="#servicios">Servicios</a>
-            <a href="#trabajos">Trabajos</a>
-            <a href="#proceso">Proceso</a>
-          </nav>
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#trabajos">Trabajos</a>
+                    <a href="#proceso">Proceso</a>
+                </nav>
 
-          <a class="header-phone" href="tel:+34602049112" aria-label="Llamar al 602 049 112">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <a class="header-phone" href="tel:+34602049112" aria-label="Llamar al 602 049 112">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M7.3 3.5 4.9 5.9c-.7.7-.6 2.4.3 4.4a20.1 20.1 0 0 0 8.4 8.4c2 .9 3.7 1 4.4.3l2.4-2.4-4.1-3-1.8 1.8c-2.4-1-4.9-3.5-5.9-5.9l1.8-1.8-3.1-4.2Z" />
             </svg>
-            <span>602 049 112</span>
-          </a>
+                    <span>602 049 112</span>
+                </a>
 
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">
             <span></span>
           </button>
-        </div>
-      </header>
+            </div>
+        </header>
 
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="page-shell hero-grid">
-          <div class="hero-copy">
-            <h1 id="hero-title">
-              <span>Pavimentos</span><em>que cambian</em><span>el espacio.</span>
-            </h1>
-            <p>
-              Hormigón impreso, fratasado y revestimientos para exteriores con más de 12 años de experiencia.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-blue" href="#contacto">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="page-shell hero-grid">
+                <div class="hero-copy">
+                    <h1 id="hero-title">
+                        <span>Pavimentos</span><em>que cambian</em><span>el espacio.</span>
+                    </h1>
+                    <p>
+                        Hormigón impreso, fratasado y revestimientos para exteriores con más de 12 años de experiencia.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-blue" href="#contacto">
                 Pedir presupuesto
                 <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                   <path d="M5 15 15 5M7 5h8v8" />
                 </svg>
               </a>
-              <a class="button button-plain" href="#trabajos">
+                        <a class="button button-plain" href="#trabajos">
                 Ver trabajos
                 <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                   <path d="M10 4v12M5 11l5 5 5-5" />
                 </svg>
               </a>
+                    </div>
+                </div>
+
+                <figure class="hero-photo">
+                    <img src="./assets/trabajos/impreso-patio-01.jpeg" alt="Patio amplio terminado con hormigón impreso en tonos tierra" fetchpriority="high" decoding="async" />
+                    <figcaption>Trabajo real · patio exterior</figcaption>
+                </figure>
             </div>
-          </div>
 
-          <figure class="hero-photo">
-            <img
-              src="./assets/trabajos/impreso-patio-01.jpeg"
-              alt="Patio amplio terminado con hormigón impreso en tonos tierra"
-              fetchpriority="high"
-              decoding="async"
-            />
-            <figcaption>Trabajo real · patio exterior</figcaption>
-          </figure>
-        </div>
+            <div class="page-shell trust-strip" aria-label="Zona de trabajo y experiencia">
+                <p>Valencia · Castellón · Alicante</p>
+                <p><strong>+12</strong> años de experiencia</p>
+            </div>
+        </section>
 
-        <div class="page-shell trust-strip" aria-label="Zona de trabajo y experiencia">
-          <p>Valencia · Castellón · Alicante</p>
-          <p><strong>+12</strong> años de experiencia</p>
-        </div>
-      </section>
-
-      <section class="statement" aria-labelledby="statement-title">
-        <div class="page-shell statement-grid">
-          <div class="statement-photo">
-            <img
-              src="./assets/trabajos/impreso-pasillo-02.jpeg"
-              alt="Pasillo exterior con acabado de piedra impresa"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="statement-copy">
-            <p class="section-index">01 · La diferencia</p>
-            <h2 id="statement-title">Diseño y calidad <em>que duran.</em></h2>
-            <p>
-              Cada espacio pide una solución distinta. Escuchamos lo que necesitas y cuidamos el acabado para que el resultado encaje con tu vivienda.
-            </p>
-            <a class="inline-link" href="#contacto">
+        <section class="statement" aria-labelledby="statement-title">
+            <div class="page-shell statement-grid">
+                <div class="statement-photo">
+                    <img src="./assets/trabajos/impreso-pasillo-02.jpeg" alt="Pasillo exterior con acabado de piedra impresa" loading="lazy" decoding="async" />
+                </div>
+                <div class="statement-copy">
+                    <p class="section-index">01 · La diferencia</p>
+                    <h2 id="statement-title">Diseño y calidad <em>que duran.</em></h2>
+                    <p>
+                        Cada espacio pide una solución distinta. Escuchamos lo que necesitas y cuidamos el acabado para que el resultado encaje con tu vivienda.
+                    </p>
+                    <a class="inline-link" href="#contacto">
               Hablemos de tu proyecto
               <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <path d="M4 10h12M11 5l5 5-5 5" />
               </svg>
             </a>
-          </div>
-        </div>
-      </section>
+                </div>
+            </div>
+        </section>
 
-      <section class="services" id="servicios" aria-labelledby="services-title">
-        <div class="page-shell services-heading">
-          <p class="section-index">02 · Servicios</p>
-          <h2 id="services-title">Todo lo que podemos hacer por <em>tu exterior.</em></h2>
-        </div>
+        <section class="services" id="servicios" aria-labelledby="services-title">
+            <div class="page-shell services-heading">
+                <p class="section-index">02 · Servicios</p>
+                <h2 id="services-title">Todo lo que podemos hacer por <em>tu exterior.</em></h2>
+            </div>
 
-        <div class="page-shell services-layout">
-          <div class="services-photo">
-            <img
-              src="./assets/trabajos/entrada-09.jpeg"
-              alt="Entrada de vivienda con hormigón impreso gris"
-              loading="lazy"
-              decoding="async"
-            />
-            <span>Acabados pensados para cada espacio</span>
-          </div>
+            <div class="page-shell services-layout">
+                <div class="services-photo">
+                    <img src="entrada-09.jpeg" alt="Entrada de vivienda con hormigón impreso gris" loading="lazy" decoding="async" />
+                    <span>Acabados pensados para cada espacio</span>
+                </div>
 
-          <div class="services-list">
-            <article class="service-row">
-              <span>01</span>
-              <div>
-                <h3>Hormigón impreso</h3>
-                <p>Texturas y colores para patios, terrazas y entradas con un acabado personal y cuidado.</p>
-              </div>
-              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <div class="services-list">
+                    <article class="service-row">
+                        <span>01</span>
+                        <div>
+                            <h3>Hormigón impreso</h3>
+                            <p>Texturas y colores para patios, terrazas y entradas con un acabado personal y cuidado.</p>
+                        </div>
+                        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <path d="M4 10h12M11 5l5 5-5 5" />
               </svg>
-            </article>
-            <article class="service-row">
-              <span>02</span>
-              <div>
-                <h3>Hormigón fratasado</h3>
-                <p>Un acabado continuo, limpio y resistente para superficies exteriores de uso diario.</p>
-              </div>
-              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                    </article>
+                    <article class="service-row">
+                        <span>02</span>
+                        <div>
+                            <h3>Hormigón fratasado</h3>
+                            <p>Un acabado continuo, limpio y resistente para superficies exteriores de uso diario.</p>
+                        </div>
+                        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <path d="M4 10h12M11 5l5 5-5 5" />
               </svg>
-            </article>
-            <article class="service-row">
-              <span>03</span>
-              <div>
-                <h3>Vertical y monocapa</h3>
-                <p>Revestimientos para fachadas, muros y paredes exteriores, adaptados a cada proyecto.</p>
-              </div>
-              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                    </article>
+                    <article class="service-row">
+                        <span>03</span>
+                        <div>
+                            <h3>Vertical y monocapa</h3>
+                            <p>Revestimientos para fachadas, muros y paredes exteriores, adaptados a cada proyecto.</p>
+                        </div>
+                        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <path d="M4 10h12M11 5l5 5-5 5" />
               </svg>
-            </article>
-            <article class="service-row">
-              <span>04</span>
-              <div>
-                <h3>Reparación y mantenimiento</h3>
-                <p>Puesta a punto de superficies que necesitan recuperar presencia y buen aspecto.</p>
-              </div>
-              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                    </article>
+                    <article class="service-row">
+                        <span>04</span>
+                        <div>
+                            <h3>Reparación y mantenimiento</h3>
+                            <p>Puesta a punto de superficies que necesitan recuperar presencia y buen aspecto.</p>
+                        </div>
+                        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <path d="M4 10h12M11 5l5 5-5 5" />
               </svg>
-            </article>
-          </div>
-        </div>
-      </section>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-      <section class="works" id="trabajos" aria-labelledby="works-title">
-        <div class="page-shell works-heading">
-          <div>
-            <p class="section-index section-index-light">03 · Trabajos</p>
-            <h2 id="works-title">Trabajos que hablan <em>por sí solos.</em></h2>
-          </div>
-          <div class="works-intro">
-            <p>Una selección de trabajos reales.</p>
-            <a class="button button-orange" href="#contacto">
+        <section class="works" id="trabajos" aria-labelledby="works-title">
+            <div class="page-shell works-heading">
+                <div>
+                    <p class="section-index section-index-light">03 · Trabajos</p>
+                    <h2 id="works-title">Trabajos que hablan <em>por sí solos.</em></h2>
+                </div>
+                <div class="works-intro">
+                    <p>Una selección de trabajos reales.</p>
+                    <a class="button button-orange" href="#contacto">
               Pedir presupuesto
               <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <path d="M5 15 15 5M7 5h8v8" />
               </svg>
             </a>
-          </div>
-        </div>
-
-        <div class="page-shell works-grid">
-          <figure class="work-card work-one">
-            <div class="work-image">
-              <img src="./assets/trabajos/adoquin-03.jpeg" alt="Detalle de pavimento impreso con textura de adoquín" loading="lazy" decoding="async" />
+                </div>
             </div>
-            <figcaption>
-              <span>01</span>
-              <strong>Textura adoquín</strong>
-            </figcaption>
-          </figure>
-          <figure class="work-card work-two">
-            <div class="work-image">
-              <img src="./assets/trabajos/fratasado-04.jpeg" alt="Pavimento exterior de tonos cálidos junto a una vivienda" loading="lazy" decoding="async" />
+
+            <div class="page-shell works-grid">
+                <figure class="work-card work-one">
+                    <div class="work-image">
+                        <img src="./assets/trabajos/adoquin-03.jpeg" alt="Detalle de pavimento impreso con textura de adoquín" loading="lazy" decoding="async" />
+                    </div>
+                    <figcaption>
+                        <span>01</span>
+                        <strong>Textura adoquín</strong>
+                    </figcaption>
+                </figure>
+                <figure class="work-card work-two">
+                    <div class="work-image">
+                        <img src="./assets/trabajos/fratasado-04.jpeg" alt="Pavimento exterior de tonos cálidos junto a una vivienda" loading="lazy" decoding="async" />
+                    </div>
+                    <figcaption>
+                        <span>02</span>
+                        <strong>Entrada exterior</strong>
+                    </figcaption>
+                </figure>
+                <figure class="work-card work-three">
+                    <div class="work-image">
+                        <img src="./assets/trabajos/pizarra-05-clean.jpeg" alt="Pavimento gris con acabado de pizarra" loading="lazy" decoding="async" />
+                    </div>
+                    <figcaption>
+                        <span>03</span>
+                        <strong>Acabado pizarra</strong>
+                    </figcaption>
+                </figure>
+                <figure class="work-card work-four">
+                    <div class="work-image">
+                        <img src="./assets/trabajos/piedra-06.jpeg" alt="Superficie exterior con acabado de piedra" loading="lazy" decoding="async" />
+                    </div>
+                    <figcaption>
+                        <span>04</span>
+                        <strong>Acabado piedra</strong>
+                    </figcaption>
+                </figure>
             </div>
-            <figcaption>
-              <span>02</span>
-              <strong>Entrada exterior</strong>
-            </figcaption>
-          </figure>
-          <figure class="work-card work-three">
-            <div class="work-image">
-              <img src="./assets/trabajos/pizarra-05-clean.jpeg" alt="Pavimento gris con acabado de pizarra" loading="lazy" decoding="async" />
+        </section>
+
+        <section class="process" id="proceso" aria-labelledby="process-title">
+            <div class="page-shell process-grid">
+                <div class="process-heading">
+                    <p class="section-index">04 · Proceso</p>
+                    <h2 id="process-title">Así <em>trabajamos.</em></h2>
+                    <p>Trato directo, valoración clara y cuidado por los detalles.</p>
+                </div>
+
+                <ol class="process-list">
+                    <li>
+                        <span>01</span>
+                        <div>
+                            <h3>Hablamos</h3>
+                            <p>Nos cuentas qué espacio quieres transformar y qué resultado buscas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <div>
+                            <h3>Valoramos</h3>
+                            <p>Revisamos el trabajo y preparamos un presupuesto sin compromiso.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <div>
+                            <h3>Lo hacemos realidad</h3>
+                            <p>Ejecutamos el proyecto cuidando cada fase y el acabado final.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-            <figcaption>
-              <span>03</span>
-              <strong>Acabado pizarra</strong>
-            </figcaption>
-          </figure>
-          <figure class="work-card work-four">
-            <div class="work-image">
-              <img src="./assets/trabajos/piedra-06.jpeg" alt="Superficie exterior con acabado de piedra" loading="lazy" decoding="async" />
+
+            <div class="page-shell coverage-line">
+                <span>Zona de trabajo</span>
+                <strong>Valencia · Castellón · Alicante</strong>
             </div>
-            <figcaption>
-              <span>04</span>
-              <strong>Acabado piedra</strong>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+        </section>
 
-      <section class="process" id="proceso" aria-labelledby="process-title">
-        <div class="page-shell process-grid">
-          <div class="process-heading">
-            <p class="section-index">04 · Proceso</p>
-            <h2 id="process-title">Así <em>trabajamos.</em></h2>
-            <p>Trato directo, valoración clara y cuidado por los detalles.</p>
-          </div>
-
-          <ol class="process-list">
-            <li>
-              <span>01</span>
-              <div>
-                <h3>Hablamos</h3>
-                <p>Nos cuentas qué espacio quieres transformar y qué resultado buscas.</p>
-              </div>
-            </li>
-            <li>
-              <span>02</span>
-              <div>
-                <h3>Valoramos</h3>
-                <p>Revisamos el trabajo y preparamos un presupuesto sin compromiso.</p>
-              </div>
-            </li>
-            <li>
-              <span>03</span>
-              <div>
-                <h3>Lo hacemos realidad</h3>
-                <p>Ejecutamos el proyecto cuidando cada fase y el acabado final.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <div class="page-shell coverage-line">
-          <span>Zona de trabajo</span>
-          <strong>Valencia · Castellón · Alicante</strong>
-        </div>
-      </section>
-
-      <section class="contact" id="contacto" aria-labelledby="contact-title">
-        <div class="page-shell contact-grid">
-          <div class="contact-copy">
-            <p class="section-index">05 · Contacto</p>
-            <h2 id="contact-title">¿Tienes un espacio en mente? <em>Hablemos.</em></h2>
-            <p class="contact-promise">Presupuesto sin compromiso.</p>
-            <a class="contact-phone" href="tel:+34602049112">
-              <span>Llama directamente a Andrés</span>
-              <strong>602 049 112</strong>
-              <span class="contact-arrow">
+        <section class="contact" id="contacto" aria-labelledby="contact-title">
+            <div class="page-shell contact-grid">
+                <div class="contact-copy">
+                    <p class="section-index">05 · Contacto</p>
+                    <h2 id="contact-title">¿Tienes un espacio en mente? <em>Hablemos.</em></h2>
+                    <p class="contact-promise">Presupuesto sin compromiso.</p>
+                    <a class="contact-phone" href="tel:+34602049112">
+                        <span>Llama directamente a Andrés</span>
+                        <strong>602 049 112</strong>
+                        <span class="contact-arrow">
                 <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                   <path d="M5 15 15 5M7 5h8v8" />
                 </svg>
               </span>
-            </a>
-          </div>
+                    </a>
+                </div>
 
-          <div class="contact-photo">
-            <img
-              src="./assets/trabajos/terraza-08.jpeg"
-              alt="Terraza y escalones revestidos en tonos rojizos"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </div>
-      </section>
+                <div class="contact-photo">
+                    <img src="./assets/trabajos/terraza-08.jpeg" alt="Terraza y escalones revestidos en tonos rojizos" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
 
-      <footer class="site-footer">
-        <div class="page-shell footer-grid">
-          <a href="#inicio" aria-label="Volver al inicio">
-            <span class="brand">
+        <footer class="site-footer">
+            <div class="page-shell footer-grid">
+                <a href="#inicio" aria-label="Volver al inicio">
+                    <span class="brand">
               <img src="./assets/logo-mark-v2.png" alt="" aria-hidden="true" />
               <span class="brand-copy">
                 <strong>Hormigón Impreso</strong>
                 <span>Andrés</span>
-              </span>
-            </span>
-          </a>
-          <nav aria-label="Navegación del pie de página">
-            <a href="#servicios">Servicios</a>
-            <a href="#trabajos">Trabajos</a>
-            <a href="#proceso">Proceso</a>
-            <a href="#contacto">Contacto</a>
-          </nav>
-          <div class="footer-contact">
-            <a href="tel:+34602049112">602 049 112</a>
-            <p>Valencia · Castellón · Alicante</p>
-          </div>
-          <div class="footer-bottom">
-            <span>Hormigón Impreso Andrés</span>
-            <span>Andrés · NIE Y-1911669-S</span>
-          </div>
-        </div>
-      </footer>
+                    </span>
+                    </span>
+                </a>
+                <nav aria-label="Navegación del pie de página">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#trabajos">Trabajos</a>
+                    <a href="#proceso">Proceso</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="footer-contact">
+                    <a href="tel:+34602049112">602 049 112</a>
+                    <p>Valencia · Castellón · Alicante</p>
+                </div>
+                <div class="footer-bottom">
+                    <span>Hormigón Impreso Andrés</span>
+                    <span>Andrés · NIE Y-1911669-S</span>
+                </div>
+            </div>
+        </footer>
 
-      <a class="mobile-call" href="tel:+34602049112" aria-label="Llamar al 602 049 112">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <a class="mobile-call" href="tel:+34602049112" aria-label="Llamar al 602 049 112">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M7.3 3.5 4.9 5.9c-.7.7-.6 2.4.3 4.4a20.1 20.1 0 0 0 8.4 8.4c2 .9 3.7 1 4.4.3l2.4-2.4-4.1-3-1.8 1.8c-2.4-1-4.9-3.5-5.9-5.9l1.8-1.8-3.1-4.2Z" />
         </svg>
-        <span>Llamar</span>
-      </a>
+            <span>Llamar</span>
+        </a>
     </main>
 
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
