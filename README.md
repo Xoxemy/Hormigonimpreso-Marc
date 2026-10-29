@@ -1,20 +1,13 @@
 # Hormigón Impreso Andrés
 
-Sitio estático listo para Vercel. Todo lo público está en `public/`.
+Sitio estático. En Vercel hay que desplegar **toda la carpeta**, no solo `index.html`.
 
 ```
-public/
-  index.html
-  css/styles.css
-  js/main.js
-  assets/
+index.html
+css/styles.css
+js/main.js
+assets/
+vercel.json
 ```
 
-## Desplegar
-
-1. Sube el proyecto a GitHub.
-2. Importa el repo en Vercel.
-3. No cambies Framework, Build Command ni Output Directory.
-4. Deploy.
-
-`vercel.json` sirve la carpeta `public` como raíz del sitio.
+En el proyecto de Vercel: Framework = Other, Output Directory = `.`
