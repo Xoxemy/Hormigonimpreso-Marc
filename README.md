@@ -1,22 +1,20 @@
 # Hormigón Impreso Andrés
 
-Sitio estático (HTML, CSS y JS) listo para desplegar en Vercel.
+Sitio estático listo para Vercel. Todo lo público está en `public/`.
 
-## Desplegar en Vercel
+```
+public/
+  index.html
+  css/styles.css
+  js/main.js
+  assets/
+```
+
+## Desplegar
 
 1. Sube el proyecto a GitHub.
-2. En [Vercel](https://vercel.com/new), importa el repositorio.
-3. No cambies la configuración: `vercel.json` ya fija el framework a **Other**, sin instalación ni build, y sirve la raíz del proyecto.
-4. Pulsa **Deploy**.
+2. Importa el repo en Vercel.
+3. No cambies Framework, Build Command ni Output Directory.
+4. Deploy.
 
-También puedes desplegar desde la carpeta del proyecto con:
-
-```bash
-npx vercel
-```
-
-La primera vez inicia sesión y confirma el proyecto. Para producción:
-
-```bash
-npx vercel --prod
-```
+`vercel.json` sirve la carpeta `public` como raíz del sitio.
