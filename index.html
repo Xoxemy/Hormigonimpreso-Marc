@@ -4,21 +4,66 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hormigón Impreso Andrés | Valencia, Castellón y Alicante</title>
-    <meta name="description" content="Hormigón impreso, fratasado, vertical, monocapa, reparación y mantenimiento. Más de 12 años de experiencia. Presupuesto sin compromiso." />
-    <meta name="keywords" content="hormigón impreso, hormigón fratasado, pavimentos Valencia, pavimentos Castellón, pavimentos Alicante, monocapa, reparación de pavimentos" />
+    <title>Hormigón Impreso Andrés | Pavimentos en Valencia, Castellón y Alicante</title>
+    <meta name="description" content="Especialistas en hormigón impreso, fratasado, vertical y monocapa en Valencia, Castellón y Alicante. Más de 12 años de experiencia. ¡Presupuesto sin compromiso!" />
+    <meta name="keywords" content="hormigón impreso Valencia, hormigón fratasado Castellón, pavimentos Alicante, hormigón vertical, monocapa, Hormigón Impreso Andrés" />
     <link rel="icon" href="./assets/logo-mark-v2.png" />
+    <link rel="canonical" href="https://tudominio.vercel.app/" />
+
+    <!-- Open Graph / Redes Sociales / WhatsApp -->
     <meta property="og:title" content="Hormigón Impreso Andrés | Valencia, Castellón y Alicante" />
-    <meta property="og:description" content="Hormigón impreso, fratasado, vertical, monocapa, reparación y mantenimiento. Más de 12 años de experiencia. Presupuesto sin compromiso." />
+    <meta property="og:description" content="Pavimentos de hormigón impreso, fratasado, vertical y monocapa. Más de 12 años de experiencia. Pide presupuesto sin compromiso." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Hormigón Impreso Andrés" />
-    <meta property="og:image" content="assets/og-v2.png" />
+    <meta property="og:image" content="https://tudominio.vercel.app/assets/og-v2.png" />
+    
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hormigón Impreso Andrés | Valencia, Castellón y Alicante" />
+    <meta name="twitter:description" content="Especialistas en hormigón impreso, fratasado y revestimientos. Presupuesto sin compromiso." />
 
-    <!-- Estilos CSS corregidos y optimizados -->
+    <!-- Datos Estructurados Schema.org para SEO Local (Google Maps y Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hormigón Impreso Andrés",
+      "image": "https://tudominio.vercel.app/assets/logo-mark-v2.png",
+      "@id": "https://tudominio.vercel.app",
+      "url": "https://tudominio.vercel.app",
+      "telephone": "+34602049112",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Valencia, Castellón, Alicante",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.4699,
+        "longitude": -0.3763
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "areaServed": ["Valencia", "Castellón", "Alicante"],
+      "description": "Empresa especializada en pavimentos de hormigón impreso, fratasado, vertical y monocapa con más de 12 años de experiencia."
+    }
+    </script>
+
+    <!-- Estilos CSS optimizados -->
     <style>
-         :root {
+        :root {
             --paper: #f3efe5;
             --paper-light: #faf8f2;
             --ink: #171717;
@@ -32,15 +77,15 @@
             --sans: Arial, Helvetica, sans-serif;
             --serif: Georgia, "Times New Roman", serif;
         }
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             margin: 0;
             overflow-x: hidden;
@@ -50,37 +95,32 @@
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
         }
-        
+
         a {
             color: inherit;
             text-decoration: none;
             -webkit-tap-highlight-color: transparent;
         }
-        
+
         img {
             display: block;
             max-width: 100%;
         }
-        
-        h1,
-        h2,
-        h3,
-        p,
-        figure {
+
+        h1, h2, h3, p, figure {
             margin-top: 0;
         }
-        
-        a:focus-visible,
-        button:focus-visible {
+
+        a:focus-visible, button:focus-visible {
             outline: 3px solid var(--orange);
             outline-offset: 4px;
         }
-        
+
         .page-shell {
             width: var(--shell);
             margin-inline: auto;
         }
-        
+
         .site-header {
             position: sticky;
             top: 0;
@@ -89,30 +129,30 @@
             border-bottom: 1px solid var(--line);
             transition: box-shadow 180ms ease;
         }
-        
+
         .site-header.is-scrolled {
             box-shadow: 0 8px 24px rgba(23, 23, 23, 0.08);
         }
-        
+
         .header-inner {
             display: grid;
             grid-template-columns: 1fr auto 1fr;
             align-items: center;
             min-height: 88px;
         }
-        
+
         .brand {
             display: inline-flex;
             align-items: center;
             gap: 12px;
         }
-        
-        .brand>img {
+
+        .brand > img {
             width: 37px;
             height: 37px;
             object-fit: contain;
         }
-        
+
         .brand-copy {
             display: flex;
             flex-direction: column;
@@ -120,26 +160,26 @@
             text-transform: uppercase;
             line-height: 1;
         }
-        
+
         .brand-copy strong {
             font-size: 12px;
             font-weight: 900;
             letter-spacing: -0.01em;
         }
-        
+
         .brand-copy span {
             color: var(--blue);
             font-size: 10px;
             font-weight: 800;
             letter-spacing: 0.21em;
         }
-        
+
         .main-nav {
             display: flex;
             align-items: center;
             gap: 36px;
         }
-        
+
         .main-nav a,
         .site-footer nav a {
             font-size: 11px;
@@ -147,12 +187,12 @@
             letter-spacing: 0.09em;
             text-transform: uppercase;
         }
-        
+
         .main-nav a {
             position: relative;
             padding: 8px 0;
         }
-        
+
         .main-nav a::after {
             position: absolute;
             right: 0;
@@ -165,13 +205,13 @@
             transform-origin: right;
             transition: transform 180ms ease;
         }
-        
+
         .main-nav a:hover::after,
         .main-nav a.is-active::after {
             transform: scaleX(1);
             transform-origin: left;
         }
-        
+
         .header-phone {
             display: inline-flex;
             align-items: center;
@@ -185,7 +225,7 @@
             font-weight: 900;
             letter-spacing: 0.03em;
         }
-        
+
         .header-phone svg {
             width: 18px;
             fill: none;
@@ -194,11 +234,11 @@
             stroke-linecap: round;
             stroke-linejoin: round;
         }
-        
+
         .header-phone:hover {
             background: var(--blue-dark);
         }
-        
+
         .nav-toggle {
             display: none;
             width: 44px;
@@ -210,7 +250,7 @@
             cursor: pointer;
             justify-self: end;
         }
-        
+
         .nav-toggle span,
         .nav-toggle span::before,
         .nav-toggle span::after {
@@ -220,98 +260,95 @@
             background: var(--ink);
             transition: transform 180ms ease, opacity 180ms ease;
         }
-        
+
         .nav-toggle span {
             position: relative;
             margin: 0 auto;
         }
-        
+
         .nav-toggle span::before,
         .nav-toggle span::after {
             position: absolute;
             left: 0;
             content: "";
         }
-        
+
         .nav-toggle span::before {
             top: -6px;
         }
-        
+
         .nav-toggle span::after {
             top: 6px;
         }
-        
+
         body.nav-open .nav-toggle span {
             background: transparent;
         }
-        
+
         body.nav-open .nav-toggle span::before {
             transform: translateY(6px) rotate(45deg);
         }
-        
+
         body.nav-open .nav-toggle span::after {
             transform: translateY(-6px) rotate(-45deg);
         }
-        
+
         .hero {
             padding: 78px 0 0;
             background: var(--paper);
         }
-        
+
         .hero-grid {
             display: grid;
             grid-template-columns: minmax(0, 0.92fr) minmax(460px, 1.08fr);
             align-items: center;
             gap: clamp(48px, 7vw, 110px);
         }
-        
+
         .hero-copy {
             padding: 34px 0 82px;
         }
-        
-        .hero h1,
-        h2 {
+
+        .hero h1, h2 {
             font-weight: 900;
             letter-spacing: -0.075em;
         }
-        
+
         .hero h1 {
             max-width: 670px;
             margin-bottom: 31px;
             font-size: clamp(66px, 7.4vw, 108px);
             line-height: 0.87;
         }
-        
-        .hero h1>span,
-        .hero h1>em {
+
+        .hero h1 > span,
+        .hero h1 > em {
             display: block;
         }
-        
-        .hero h1 em,
-        h2 em {
+
+        .hero h1 em, h2 em {
             display: inline;
             color: var(--orange);
             font-family: var(--serif);
             font-weight: 400;
             letter-spacing: -0.055em;
         }
-        
-        .hero-copy>p {
+
+        .hero-copy > p {
             max-width: 475px;
             margin-bottom: 34px;
             color: var(--muted);
             font-size: 17px;
             line-height: 1.55;
         }
-        
+
         .hero-actions {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             gap: 11px;
         }
-        /* Corrección de botones */
-        
+
         .button {
             display: inline-flex;
             align-items: center;
@@ -328,14 +365,14 @@
             cursor: pointer;
             text-decoration: none;
         }
-        
+
         .button:hover {
             transform: translateY(-2px);
         }
-        
+
         .button svg,
         .inline-link svg,
-        .service-row>svg,
+        .service-row > svg,
         .contact-arrow svg {
             width: 19px;
             height: 19px;
@@ -346,42 +383,42 @@
             stroke-linecap: square;
             stroke-linejoin: miter;
         }
-        
+
         .button-blue {
             color: #fff;
             background: var(--blue);
             border-color: var(--blue);
         }
-        
+
         .button-blue:hover {
             background: var(--blue-dark);
             border-color: var(--blue-dark);
             color: #fff;
         }
-        
+
         .button-plain {
             background: transparent;
             color: var(--ink);
         }
-        
+
         .button-plain:hover {
             color: #fff;
             background: var(--ink);
             border-color: var(--ink);
         }
-        
+
         .button-orange {
             color: var(--ink);
             background: var(--orange);
             border-color: var(--orange);
         }
-        
+
         .button-orange:hover {
             color: #fff;
             background: var(--blue);
             border-color: var(--blue);
         }
-        
+
         .hero-photo {
             position: relative;
             align-self: stretch;
@@ -390,7 +427,7 @@
             overflow: hidden;
             border-top-left-radius: 230px;
         }
-        
+
         .hero-photo img {
             width: 100%;
             height: 100%;
@@ -398,7 +435,7 @@
             object-fit: cover;
             object-position: 54% center;
         }
-        
+
         .hero-photo figcaption {
             position: absolute;
             right: 18px;
@@ -411,14 +448,14 @@
             letter-spacing: 0.09em;
             text-transform: uppercase;
         }
-        
+
         .trust-strip {
             display: grid;
             grid-template-columns: 1fr 1fr;
             min-height: 93px;
             border-top: 1px solid var(--line);
         }
-        
+
         .trust-strip p {
             display: flex;
             align-items: center;
@@ -428,37 +465,37 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
-        
+
         .trust-strip p:last-child {
             justify-content: flex-end;
             gap: 10px;
             border-left: 1px solid var(--line);
         }
-        
+
         .trust-strip strong {
             color: var(--blue);
             font-size: 30px;
             letter-spacing: -0.06em;
         }
-        
+
         .statement {
             padding: 145px 0;
             background: var(--paper-light);
         }
-        
+
         .statement-grid {
             display: grid;
             grid-template-columns: minmax(320px, 0.84fr) minmax(0, 1.16fr);
             align-items: center;
             gap: clamp(70px, 10vw, 160px);
         }
-        
+
         .statement-photo {
             position: relative;
             min-height: 610px;
             overflow: hidden;
         }
-        
+
         .statement-photo::before {
             position: absolute;
             z-index: 1;
@@ -469,13 +506,13 @@
             background: var(--orange);
             content: "";
         }
-        
+
         .statement-photo img {
             width: 100%;
             height: 610px;
             object-fit: cover;
         }
-        
+
         .section-index {
             margin-bottom: 37px;
             color: var(--blue);
@@ -484,7 +521,7 @@
             letter-spacing: 0.16em;
             text-transform: uppercase;
         }
-        
+
         .statement-copy h2,
         .services-heading h2,
         .works-heading h2,
@@ -494,15 +531,15 @@
             font-size: clamp(58px, 6.7vw, 92px);
             line-height: 0.91;
         }
-        
-        .statement-copy>p:not(.section-index) {
+
+        .statement-copy > p:not(.section-index) {
             max-width: 515px;
             margin-bottom: 36px;
             color: var(--muted);
             font-size: 17px;
             line-height: 1.7;
         }
-        
+
         .inline-link {
             display: inline-flex;
             align-items: center;
@@ -514,20 +551,20 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
-        
+
         .inline-link svg {
             transition: transform 180ms ease;
         }
-        
+
         .inline-link:hover svg {
             transform: translateX(5px);
         }
-        
+
         .services {
             padding: 138px 0 150px;
             background: var(--paper);
         }
-        
+
         .services-heading {
             display: grid;
             grid-template-columns: 0.42fr 1.58fr;
@@ -535,30 +572,30 @@
             gap: 40px;
             margin-bottom: 75px;
         }
-        
+
         .services-heading h2 {
             max-width: 1000px;
             margin-bottom: 0;
         }
-        
+
         .services-layout {
             display: grid;
             grid-template-columns: minmax(320px, 0.83fr) minmax(0, 1.17fr);
             align-items: start;
             gap: clamp(55px, 8vw, 125px);
         }
-        
+
         .services-photo {
             position: sticky;
             top: 25px;
         }
-        
+
         .services-photo img {
             width: 100%;
             height: 620px;
             object-fit: cover;
         }
-        
+
         .services-photo span {
             display: block;
             margin-top: 14px;
@@ -568,11 +605,11 @@
             letter-spacing: 0.12em;
             text-transform: uppercase;
         }
-        
+
         .services-list {
             border-top: 1px solid var(--ink);
         }
-        
+
         .service-row {
             display: grid;
             grid-template-columns: 45px minmax(0, 1fr) 26px;
@@ -582,14 +619,14 @@
             padding: 25px 0 26px;
             border-bottom: 1px solid var(--line);
         }
-        
-        .service-row>span {
+
+        .service-row > span {
             padding-top: 5px;
             color: var(--blue);
             font-size: 11px;
             font-weight: 900;
         }
-        
+
         .service-row h3 {
             margin-bottom: 11px;
             font-size: clamp(27px, 2.4vw, 38px);
@@ -597,7 +634,7 @@
             letter-spacing: -0.05em;
             line-height: 1;
         }
-        
+
         .service-row p {
             max-width: 530px;
             margin-bottom: 0;
@@ -605,17 +642,17 @@
             font-size: 14px;
             line-height: 1.6;
         }
-        
-        .service-row>svg {
+
+        .service-row > svg {
             align-self: center;
             color: var(--orange);
             transition: transform 180ms ease;
         }
-        
-        .service-row:hover>svg {
+
+        .service-row:hover > svg {
             transform: translateX(5px);
         }
-        
+
         .works {
             position: relative;
             padding: 137px 0 150px;
@@ -623,7 +660,7 @@
             background: var(--paper-light);
             border-top: 5px solid var(--blue);
         }
-        
+
         .works::after {
             position: absolute;
             z-index: 2;
@@ -636,11 +673,11 @@
             content: "";
             transform: translateX(-50%);
         }
-        
+
         .section-index-light {
             color: var(--blue);
         }
-        
+
         .works-heading {
             display: grid;
             grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
@@ -648,20 +685,20 @@
             gap: 70px;
             margin-bottom: 72px;
         }
-        
+
         .works-heading h2 {
             max-width: 800px;
             margin-bottom: 0;
         }
-        
+
         .works-heading h2 em {
             color: var(--orange);
         }
-        
+
         .works-intro {
             padding-bottom: 7px;
         }
-        
+
         .works-intro::before {
             display: block;
             width: 62px;
@@ -670,19 +707,19 @@
             background: var(--blue);
             content: "";
         }
-        
+
         .works-intro p {
             margin-bottom: 25px;
             color: var(--muted);
             font-size: 15px;
         }
-        
+
         .works-grid {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 18px;
         }
-        
+
         .work-card {
             position: relative;
             display: grid;
@@ -691,13 +728,13 @@
             margin: 0;
             background: transparent;
         }
-        
+
         .work-image {
             position: relative;
             overflow: hidden;
             background: #d7d1c6;
         }
-        
+
         .work-card img {
             position: absolute;
             inset: 0;
@@ -706,11 +743,11 @@
             object-fit: cover;
             transition: transform 650ms cubic-bezier(0.16, 0.8, 0.2, 1);
         }
-        
+
         .work-card:hover img {
             transform: scale(1.045);
         }
-        
+
         .work-card figcaption {
             position: relative;
             display: grid;
@@ -721,7 +758,7 @@
             margin: 0;
             padding-top: 15px;
         }
-        
+
         .work-card figcaption::before {
             position: absolute;
             top: 10px;
@@ -731,14 +768,14 @@
             background: var(--blue);
             content: "";
         }
-        
+
         .work-card figcaption span {
             padding-top: 10px;
             color: var(--blue);
             font-size: 13px;
             font-weight: 900;
         }
-        
+
         .work-card figcaption strong {
             padding-top: 10px;
             font-size: 11px;
@@ -746,42 +783,42 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
         }
-        
+
         .process {
             padding: 139px 0 0;
             color: var(--ink);
             background: var(--orange);
         }
-        
+
         .process-grid {
             display: grid;
             grid-template-columns: minmax(320px, 0.84fr) minmax(0, 1.16fr);
             gap: clamp(70px, 10vw, 160px);
             padding-bottom: 126px;
         }
-        
+
         .process-heading .section-index {
             color: var(--ink);
         }
-        
+
         .process-heading h2 em {
             color: #fff;
         }
-        
-        .process-heading>p:last-child {
+
+        .process-heading > p:last-child {
             max-width: 355px;
             margin-bottom: 0;
             font-size: 17px;
             line-height: 1.6;
         }
-        
+
         .process-list {
             margin: 4px 0 0;
             padding: 0;
             border-top: 1px solid rgba(23, 23, 23, 0.45);
             list-style: none;
         }
-        
+
         .process-list li {
             display: grid;
             grid-template-columns: 55px minmax(0, 1fr);
@@ -789,12 +826,12 @@
             padding: 28px 0 31px;
             border-bottom: 1px solid rgba(23, 23, 23, 0.45);
         }
-        
-        .process-list li>span {
+
+        .process-list li > span {
             font-size: 11px;
             font-weight: 900;
         }
-        
+
         .process-list h3 {
             margin-bottom: 10px;
             font-size: clamp(29px, 3vw, 43px);
@@ -802,14 +839,14 @@
             letter-spacing: -0.055em;
             line-height: 1;
         }
-        
+
         .process-list p {
             max-width: 520px;
             margin-bottom: 0;
             font-size: 14px;
             line-height: 1.6;
         }
-        
+
         .coverage-line {
             display: grid;
             grid-template-columns: 0.38fr 1.62fr;
@@ -817,46 +854,46 @@
             min-height: 111px;
             border-top: 1px solid rgba(23, 23, 23, 0.45);
         }
-        
+
         .coverage-line span {
             font-size: 10px;
             font-weight: 900;
             letter-spacing: 0.14em;
             text-transform: uppercase;
         }
-        
+
         .coverage-line strong {
             font-size: clamp(21px, 3vw, 38px);
             font-weight: 900;
             letter-spacing: -0.045em;
         }
-        
+
         .contact {
             padding: 145px 0;
             background: var(--paper-light);
         }
-        
+
         .contact-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.16fr) minmax(340px, 0.84fr);
             align-items: center;
             gap: clamp(70px, 10vw, 155px);
         }
-        
+
         .contact-copy h2 {
             max-width: 780px;
         }
-        
+
         .contact-copy h2 em {
             color: var(--blue);
         }
-        
+
         .contact-promise {
             margin-bottom: 48px;
             color: var(--muted);
             font-size: 16px;
         }
-        
+
         .contact-phone {
             position: relative;
             display: block;
@@ -865,8 +902,8 @@
             border-top: 1px solid var(--ink);
             border-bottom: 1px solid var(--ink);
         }
-        
-        .contact-phone>span:first-child {
+
+        .contact-phone > span:first-child {
             display: block;
             margin-bottom: 12px;
             color: var(--blue);
@@ -875,14 +912,14 @@
             letter-spacing: 0.13em;
             text-transform: uppercase;
         }
-        
+
         .contact-phone strong {
             font-size: clamp(44px, 5vw, 67px);
             font-weight: 900;
             letter-spacing: -0.065em;
             line-height: 0.9;
         }
-        
+
         .contact-arrow {
             position: absolute;
             right: 10px;
@@ -894,18 +931,18 @@
             color: #fff;
             background: var(--blue);
         }
-        
+
         .contact-arrow svg {
             width: 22px;
         }
-        
+
         .contact-photo {
             position: relative;
             min-height: 565px;
             overflow: hidden;
             border-top-right-radius: 180px;
         }
-        
+
         .contact-photo::after {
             position: absolute;
             right: 0;
@@ -915,48 +952,48 @@
             background: var(--blue);
             content: "";
         }
-        
+
         .contact-photo img {
             width: 100%;
             height: 565px;
             object-fit: cover;
         }
-        
+
         .site-footer {
             padding: 72px 0 26px;
             color: #fff;
             background: var(--blue);
         }
-        
+
         .footer-grid {
             display: grid;
             grid-template-columns: 1.3fr 0.7fr 1fr;
             gap: 55px;
         }
-        
+
         .site-footer .brand-copy span {
             color: #ff9558;
         }
-        
+
         .site-footer nav {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 15px;
         }
-        
+
         .site-footer nav a {
             color: rgba(255, 255, 255, 0.72);
         }
-        
+
         .site-footer nav a:hover {
             color: #fff;
         }
-        
+
         .footer-contact {
             text-align: right;
         }
-        
+
         .footer-contact a {
             display: block;
             margin-bottom: 11px;
@@ -964,7 +1001,7 @@
             font-weight: 900;
             letter-spacing: -0.03em;
         }
-        
+
         .footer-contact p {
             margin: 0;
             color: rgba(255, 255, 255, 0.68);
@@ -972,7 +1009,7 @@
             line-height: 1.5;
             text-transform: uppercase;
         }
-        
+
         .footer-bottom {
             display: flex;
             grid-column: 1 / -1;
@@ -983,13 +1020,13 @@
             color: rgba(255, 255, 255, 0.58);
             font-size: 10px;
         }
-        
+
         .mobile-call {
             display: none;
         }
-        
+
         @media (max-width: 980px) {
-             :root {
+            :root {
                 --shell: min(100% - 48px, 860px);
             }
             .header-inner {
@@ -1053,9 +1090,9 @@
                 height: 510px;
             }
         }
-        
+
         @media (max-width: 720px) {
-             :root {
+            :root {
                 --shell: calc(100% - 36px);
             }
             body {
@@ -1067,7 +1104,7 @@
             .brand {
                 gap: 9px;
             }
-            .brand>img {
+            .brand > img {
                 width: 31px;
                 height: 31px;
             }
@@ -1103,7 +1140,7 @@
                 margin-bottom: 23px;
                 font-size: clamp(55px, 17vw, 76px);
             }
-            .hero-copy>p {
+            .hero-copy > p {
                 margin-bottom: 28px;
                 font-size: 15px;
             }
@@ -1162,7 +1199,7 @@
             .section-index {
                 margin-bottom: 25px;
             }
-            .statement-copy>p:not(.section-index) {
+            .statement-copy > p:not(.section-index) {
                 font-size: 15px;
             }
             .services-heading {
@@ -1182,7 +1219,7 @@
                 min-height: 0;
                 padding: 23px 0 25px;
             }
-            .service-row>svg {
+            .service-row > svg {
                 display: none;
             }
             .service-row h3 {
@@ -1305,14 +1342,12 @@
                 stroke-linejoin: round;
             }
         }
-        
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
             }
-            *,
-            *::before,
-            *::after {
+            *, *::before, *::after {
                 transition-duration: 0.01ms !important;
             }
         }
@@ -1325,11 +1360,11 @@
             <div class="page-shell header-inner">
                 <a href="#inicio" aria-label="Hormigón Impreso Andrés, inicio">
                     <span class="brand">
-                        <img src="./logo-mark-v2.png" alt="" aria-hidden="true" />
+                        <img src="./logo-mark-v2.png" alt="Logotipo Hormigón Impreso Andrés" />
                         <span class="brand-copy">
                             <strong>Hormigón Impreso</strong>
                             <span>Andrés</span>
-                    </span>
+                        </span>
                     </span>
                 </a>
 
@@ -1356,10 +1391,10 @@
             <div class="page-shell hero-grid">
                 <div class="hero-copy">
                     <h1 id="hero-title">
-                        <span>Pavimentos</span><em>que cambian</em><span>el espacio.</span>
+                        <span>Pavimentos</span><em>de hormigón</em><span>en Valencia y Alicante.</span>
                     </h1>
                     <p>
-                        Hormigón impreso, fratasado y revestimientos para exteriores con más de 12 años de experiencia.
+                        Especialistas en hormigón impreso, fratasado y revestimientos para exteriores en Valencia, Castellón y Alicante con más de 12 años de experiencia.
                     </p>
                     <div class="hero-actions">
                         <a class="button button-blue" href="#contacto">
@@ -1378,7 +1413,7 @@
                 </div>
 
                 <figure class="hero-photo">
-                    <img src="./impreso-patio-01.jpeg" alt="Patio amplio terminado con hormigón impreso en tonos tierra" fetchpriority="high" decoding="async" />
+                    <img src="./impreso-patio-01.jpeg" alt="Patio exterior pavimentado con hormigón impreso en tonos tierra en Valencia" fetchpriority="high" decoding="async" />
                     <figcaption>Trabajo real · patio exterior</figcaption>
                 </figure>
             </div>
@@ -1392,13 +1427,13 @@
         <section class="statement" aria-labelledby="statement-title">
             <div class="page-shell statement-grid">
                 <div class="statement-photo">
-                    <img src="./impreso-pasillo-02.jpeg" alt="Pasillo exterior con acabado de piedra impresa" loading="lazy" decoding="async" />
+                    <img src="./impreso-pasillo-02.jpeg" alt="Pasillo exterior con acabado de piedra impresa y resistente" loading="lazy" decoding="async" />
                 </div>
                 <div class="statement-copy">
                     <p class="section-index">01 · La diferencia</p>
                     <h2 id="statement-title">Diseño y calidad <em>que duran.</em></h2>
                     <p>
-                        Cada espacio pide una solución distinta. Escuchamos lo que necesitas y cuidamos el acabado para que el resultado encaje con tu vivienda.
+                        Cada espacio pide una solución distinta. Escuchamos lo que necesitas y cuidamos el acabado para que el resultado encaje con tu vivienda en Valencia, Castellón o Alicante.
                     </p>
                     <a class="inline-link" href="#contacto">
                         Hablemos de tu proyecto
@@ -1418,7 +1453,7 @@
 
             <div class="page-shell services-layout">
                 <div class="services-photo">
-                    <img src="./entrada-09.jpeg" alt="Entrada de vivienda con hormigón impreso gris" loading="lazy" decoding="async" />
+                    <img src="./entrada-09.jpeg" alt="Entrada de vivienda residencial con hormigón impreso gris" loading="lazy" decoding="async" />
                     <span>Acabados pensados para cada espacio</span>
                 </div>
 
@@ -1427,7 +1462,7 @@
                         <span>01</span>
                         <div>
                             <h3>Hormigón impreso</h3>
-                            <p>Texturas y colores para patios, terrazas y entradas con un acabado personal y cuidado.</p>
+                            <p>Texturas y colores personalizados para patios, terrazas y entradas con gran durabilidad.</p>
                         </div>
                         <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4 10h12M11 5l5 5-5 5" />
@@ -1437,7 +1472,7 @@
                         <span>02</span>
                         <div>
                             <h3>Hormigón fratasado</h3>
-                            <p>Un acabado continuo, limpio y resistente para superficies exteriores de uso diario.</p>
+                            <p>Un acabado continuo, limpio y resistente para superficies exteriores de uso diario y naves.</p>
                         </div>
                         <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4 10h12M11 5l5 5-5 5" />
@@ -1447,7 +1482,7 @@
                         <span>03</span>
                         <div>
                             <h3>Vertical y monocapa</h3>
-                            <p>Revestimientos para fachadas, muros y paredes exteriores, adaptados a cada proyecto.</p>
+                            <p>Revestimientos impermeables para fachadas, muros y paredes exteriores adaptados a cada proyecto.</p>
                         </div>
                         <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4 10h12M11 5l5 5-5 5" />
@@ -1457,7 +1492,7 @@
                         <span>04</span>
                         <div>
                             <h3>Reparación y mantenimiento</h3>
-                            <p>Puesta a punto de superficies que necesitan recuperar presencia y buen aspecto.</p>
+                            <p>Puesta a punto y resintetizado de superficies de hormigón que necesitan recuperar su brillo.</p>
                         </div>
                         <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                             <path d="M4 10h12M11 5l5 5-5 5" />
@@ -1487,7 +1522,7 @@
             <div class="page-shell works-grid">
                 <figure class="work-card">
                     <div class="work-image">
-                        <img src="./adoquin-03.jpeg" alt="Detalle de pavimento impreso con textura de adoquín" loading="lazy" decoding="async" />
+                        <img src="./adoquin-03.jpeg" alt="Detalle de pavimento de hormigón impreso con textura de adoquín" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>01</span>
@@ -1496,7 +1531,7 @@
                 </figure>
                 <figure class="work-card">
                     <div class="work-image">
-                        <img src="./fratasado-04.jpeg" alt="Pavimento exterior de tonos cálidos junto a una vivienda" loading="lazy" decoding="async" />
+                        <img src="./fratasado-04.jpeg" alt="Pavimento exterior de hormigón fratasado en tonos cálidos" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>02</span>
@@ -1505,7 +1540,7 @@
                 </figure>
                 <figure class="work-card work-three">
                     <div class="work-image">
-                        <img src="./pizarra-05-clean.jpeg" alt="Pavimento gris con acabado de pizarra" loading="lazy" decoding="async" />
+                        <img src="./pizarra-05-clean.jpeg" alt="Pavimento gris moderno con acabado de pizarra" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>03</span>
@@ -1514,7 +1549,7 @@
                 </figure>
                 <figure class="work-card">
                     <div class="work-image">
-                        <img src="./piedra-06.jpeg" alt="Superficie exterior con acabado de piedra" loading="lazy" decoding="async" />
+                        <img src="./piedra-06.jpeg" alt="Superficie exterior de chalet con acabado de piedra natural" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>
                         <span>04</span>
@@ -1544,7 +1579,7 @@
                         <span>02</span>
                         <div>
                             <h3>Valoramos</h3>
-                            <p>Revisamos el trabajo y preparamos un presupuesto sin compromiso.</p>
+                            <p>Revisamos el trabajo en Valencia, Castellón o Alicante y preparamos presupuesto sin compromiso.</p>
                         </div>
                     </li>
                     <li>
@@ -1581,7 +1616,7 @@
                 </div>
 
                 <div class="contact-photo">
-                    <img src="./terraza-08.jpeg" alt="Terraza y escalones revestidos en tonos rojizos" loading="lazy" decoding="async" />
+                    <img src="./terraza-08.jpeg" alt="Terraza y escalones revestidos de hormigón impreso en tonos rojizos" loading="lazy" decoding="async" />
                 </div>
             </div>
         </section>
@@ -1590,11 +1625,11 @@
             <div class="page-shell footer-grid">
                 <a href="#inicio" aria-label="Volver al inicio">
                     <span class="brand">
-                        <img src="./logo-mark-v2.png" alt="" aria-hidden="true" />
+                        <img src="./logo-mark-v2.png" alt="Logotipo Hormigón Impreso Andrés" />
                         <span class="brand-copy">
                             <strong>Hormigón Impreso</strong>
                             <span>Andrés</span>
-                    </span>
+                        </span>
                     </span>
                 </a>
                 <nav aria-label="Navegación del pie de página">
@@ -1622,7 +1657,6 @@
         </a>
     </main>
 
-    <!-- JavaScript corregido sin errores de sintaxis en el Optional Chaining -->
     <script>
         const header = document.querySelector(".site-header");
         const navToggle = document.querySelector(".nav-toggle");
@@ -1630,17 +1664,17 @@
         const sections = [...document.querySelectorAll("section[id], main[id]")];
 
         function setHeaderState() {
-            header ? .classList.toggle("is-scrolled", window.scrollY > 12);
+            header?.classList.toggle("is-scrolled", window.scrollY > 12);
         }
 
         function closeNav() {
             document.body.classList.remove("nav-open");
-            navToggle ? .setAttribute("aria-expanded", "false");
+            navToggle?.setAttribute("aria-expanded", "false");
         }
 
         function toggleNav() {
             const isOpen = document.body.classList.toggle("nav-open");
-            navToggle ? .setAttribute("aria-expanded", String(isOpen));
+            navToggle?.setAttribute("aria-expanded", String(isOpen));
         }
 
         function setActiveLink() {
@@ -1654,12 +1688,12 @@
             }
 
             navLinks.forEach((link) => {
-                const href = link.getAttribute("href") ? .slice(1);
+                const href = link.getAttribute("href")?.slice(1);
                 link.classList.toggle("is-active", href === currentId);
             });
         }
 
-        navToggle ? .addEventListener("click", toggleNav);
+        navToggle?.addEventListener("click", toggleNav);
 
         navLinks.forEach((link) => {
             link.addEventListener("click", closeNav);
